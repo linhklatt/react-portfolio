@@ -5,19 +5,19 @@ const projects = [
     title: "Project 1",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis semper velit.",
-    link: "https://project1.com",
+    link: "https://linhklatt.github.io/weather-dashboard/",
   },
   {
     title: "Project 2",
     description:
       "Mauris facilisis odio eget nunc varius, vel sollicitudin lectus vehicula.",
-    link: "https://project2.com",
+    link: "https://eddygoto.github.io/Project-1-Travel-Site/",
   },
   {
     title: "Project 3",
     description:
       "Nullam tincidunt arcu vitae nisi dapibus venenatis. Sed commodo tincidunt urna, ut hendrerit est euismod vel.",
-    link: "https://project3.com",
+    link: "https://dbfighterz.herokuapp.com/",
   },
 ];
 
