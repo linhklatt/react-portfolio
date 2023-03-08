@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import "../style/index.css";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState("AboutMe");
