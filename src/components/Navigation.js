@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "../style/Navigation.css";
+
 export default function Navigation(props) {
   return (
     <Navbar collapseOnSelect expand="sm" className="row p-3 text-light">

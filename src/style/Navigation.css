@@ -1,32 +1,11 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: #93b3b0;
-  text-decoration: none;
-  color: #ffffff;
-}
-.header h1 {
+h2 {
   font-size: 48px;
   color: #30373b;
   text-align: end;
   background-color: var(--back-ground-color);
   padding: 15px;
 }
-.header nav {
-  display: flex;
-  justify-content: flex-end;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 30px;
-  margin-right: 20px;
-  padding: 10px;
-}
 
-a {
-  color: #53515e;
-}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -36,7 +15,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: aliceblue;
   background-color: blanchedalmond;
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
