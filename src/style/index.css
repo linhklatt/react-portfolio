@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: aliceblue;
   background-color: blanchedalmond;
-  background-image: url("../src/images/pexels-codioful-\(formerly-gradienta\)-7135019.jpg");
+  /* background-image: url("../src/images/pexels-codioful-\(formerly-gradienta\)-7135019.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
