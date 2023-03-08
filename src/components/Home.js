@@ -7,7 +7,6 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 
 export default function Home() {
-  // Declare a new state variable, which we'll call "count"
   const [currentPage, setCurrentPage] = useState("AboutMe");
 
   const renderPage = () => {

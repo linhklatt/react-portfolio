@@ -1,4 +1,4 @@
-import myResume from "../../images/"; // add my resume later
+// import myResume from "../../images/"; // add my resume later
 
 export default function Resume() {
   return (
@@ -12,9 +12,9 @@ export default function Resume() {
           HTML5, CSS, Bootstrap, JavaScript, jQuery, MySQL, MongoDB, Express,
           React.js, Node.js, GraphQl
         </p>
-        <a href={myResume} download className="btn btn-success mt-3">
+        {/* <a href={myResume} download className="btn btn-success mt-3">
           Download My Resume
-        </a>
+        </a> */}
       </div>
     </div>
   );
