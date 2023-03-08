@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Project 2",
     description:
-      "A website that displays a map with hidden gems placed using markers. The user can select the marker and view and image, the address, and the 3 most recent reviews for the location. User wil also be able to submit their own hidden gems on the submit page.",
+      "A website that displays a map with hidden gems placed using markers. The user can select the marker and view and image, the address, and the 3 most recent reviews for the location. User wil also be able to submit their own hidden gems on the submit page..",
     link: "https://eddygoto.github.io/Project-1-Travel-Site/",
   },
   {

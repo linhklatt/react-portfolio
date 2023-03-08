@@ -1,7 +1,7 @@
 h2 {
   font-size: 48px;
   color: #30373b;
-  text-align: end;
+
   background-color: var(--back-ground-color);
   padding: 15px;
 }
