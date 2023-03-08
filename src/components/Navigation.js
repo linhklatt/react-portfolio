@@ -16,28 +16,28 @@ export default function Navigation(props) {
           <Nav>
             <Nav.Link
               href="#aboutme"
-              className="text-light custom-nav"
+              className="text-dark custom-nav"
               onClick={() => props.handlePageChange("AboutMe")}
             >
               About Me
             </Nav.Link>
             <Nav.Link
               href="#projects"
-              className="text-light custom-nav"
+              className="text-dark custom-nav"
               onClick={() => props.handlePageChange("Projects")}
             >
               Projects
             </Nav.Link>
             <Nav.Link
               href="#contact"
-              className="text-light custom-nav"
+              className="text-dark custom-nav"
               onClick={() => props.handlePageChange("Contact")}
             >
               Contact
             </Nav.Link>
             <Nav.Link
               href="#resume"
-              className="text-light custom-nav"
+              className="text-dark custom-nav"
               onClick={() => props.handlePageChange("Resume")}
             >
               Resume
