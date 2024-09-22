@@ -1,0 +1,123 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.bg {
+  bottom: 0;
+  right: -2rem;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+}
+.introContent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.introName {
+  color: purple;
+}
+.introPara {
+  font-size: medium;
+  font-weight: 100;
+}
+
+.btn {
+  background: rgb(124, 91, 214);
+  margin: 1rem 0;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+}
+.btnImg {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+/* Large screens (Desktop) */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.intro-heading {
+  font-size: 2rem;
+}
+
+.intro-paragraph {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.intro-image {
+  width: 50%;
+  height: auto;
+  margin: 1rem;
+}
+
+/* Medium screens (Tablet) */
+@media screen and (max-width: 1024px) {
+  .intro {
+    padding: 1rem;
+  }
+  .intro-heading {
+    font-size: 1.5rem;
+  }
+  .intro-paragraph {
+    font-size: 0.9rem;
+  }
+  .bg {
+    width: 60%;
+    right: -10vw;
+  }
+}
+
+/* Small screens (Mobile) */
+@media screen and (max-width: 768px) {
+  .intro {
+    padding: 0.5rem;
+  }
+  .intro-heading {
+    font-size: 1.2rem;
+  }
+  .intro-paragraph {
+    font-size: 0.8rem;
+  }
+  .bg {
+    width: 80%;
+    right: -10vw;
+  }
+}
+
+/* Extra small screens (Small Mobile) */
+@media screen and (max-width: 480px) {
+  .intro {
+    padding: 0.25rem;
+  }
+  .intro-heading {
+    font-size: 1rem;
+  }
+  .intro-paragraph {
+    font-size: 0.7rem;
+  }
+  .bg {
+    width: 100%;
+    right: -10vw;
+  }
+}
