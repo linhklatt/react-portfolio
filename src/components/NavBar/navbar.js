@@ -1,6 +1,6 @@
 import "./navbar.css";
 import logo from "../../assets/images/logo.png";
-import contactImg from "../../assets/images/contact.png";
+
 import { Link } from "react-scroll";
 import { useState } from "react";
 
@@ -102,7 +102,6 @@ const Navbar = () => {
               .scrollIntoView({ behavior: "smooth" });
           }}
         >
-          <img src={contactImg} alt="Contact Me" className="desktopMenuImg" />
           Contact Me
         </button>
       </div>

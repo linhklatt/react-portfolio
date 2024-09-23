@@ -1,69 +1,73 @@
 #intro {
   height: calc(100vh - 4rem);
-  width: 100vw;
-  max-width: 75rem;
   margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-.bg {
-  top: -4rem;
-  right: -3rem;
-  position: absolute;
-  z-index: -1;
-  object-fit: cover;
-  height: 100vh;
-}
-.introContent {
-  height: 100vh;
-  width: 100vw;
-  padding: 2%;
-  font-size: 3rem;
-  font-weight: 700;
+  padding: 3rem 1.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.introContent {
+  padding: 2rem;
+}
+
 .hello {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 100;
 }
+
+.introText {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .introName {
   color: purple;
 }
+
 .introPara {
-  font-size: medium;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 
 .btn {
-  background: rgb(19, 185, 214) !important;
   margin: 1rem 0;
   padding: 0.5rem 1.5rem;
-  border: none;
   border-radius: 2rem;
 }
-.btnImg {
+
+.profile-img {
+  max-width: 400px; /* Set a larger max width for the image */
+  height: 300px;
   object-fit: cover;
-  margin: 0 0.25rem;
-  height: 1rem;
+  border-radius: 50%; /* Make the profile picture circular */
+  margin-bottom: 20%;
 }
 
-@media screen and (max-width: 840px) {
-  .bg {
-    width: 60%;
-    right: -15vw;
-  }
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .introContent {
-    font-size: 10vw;
+    text-align: center;
+    width: 100%;
   }
-  .hello {
-    font-size: 4.5vw;
-  }
-}
 
-@media screen and (max-width: 480x) {
   .bg {
-    right: -20vw;
+    display: none;
+  }
+
+  .hello,
+  .introText {
+    font-size: 1.5rem;
+  }
+
+  .introPara {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .profile-img {
+    object-fit: cover;
   }
 }
