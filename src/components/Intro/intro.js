@@ -14,7 +14,11 @@ const Intro = () => {
           <span className="introName"> Linh </span> <br />
           Software Developer
         </span>
-        <p className="introPara"> WRITE YOUR INTRO HERE</p>
+        <p className="introPara">
+          {" "}
+          Write your intro here Write your intro here <br />
+          Write your intro hereWrite your intro here Write your intro here
+        </p>
         <Link>
           <button className="btn">
             <img src={btnImg} alt="Hire Me" className="btnImg" />

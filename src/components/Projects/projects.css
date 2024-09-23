@@ -1,0 +1,35 @@
+#projects {
+  margin: 0 auto;
+  min-height: calc(100vh -4rem);
+  width: 100lvw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.projectsTitle {
+  margin: 1rem;
+  font-size: 3rem;
+}
+.projectsDesc {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.projectsImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 65rem;
+}
+.projectImg {
+  object-fit: cover;
+  height: 20rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
