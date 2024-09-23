@@ -7,8 +7,8 @@
   position: relative;
 }
 .bg {
-  bottom: 0;
-  right: -2rem;
+  top: -4rem;
+  right: -3rem;
   position: absolute;
   z-index: -1;
   object-fit: cover;
@@ -17,7 +17,7 @@
 .introContent {
   height: 100vh;
   width: 100vw;
-  padding: 2rem;
+  padding: 2%;
   font-size: 3rem;
   font-weight: 700;
   display: flex;
@@ -37,7 +37,7 @@
 }
 
 .btn {
-  background: rgb(124, 91, 214);
+  background: rgb(19, 185, 214) !important;
   margin: 1rem 0;
   padding: 0.5rem 1.5rem;
   border: none;
@@ -48,76 +48,22 @@
   margin: 0 0.25rem;
   height: 1rem;
 }
-/* Large screens (Desktop) */
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-}
 
-.intro-heading {
-  font-size: 2rem;
-}
-
-.intro-paragraph {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.intro-image {
-  width: 50%;
-  height: auto;
-  margin: 1rem;
-}
-
-/* Medium screens (Tablet) */
-@media screen and (max-width: 1024px) {
-  .intro {
-    padding: 1rem;
-  }
-  .intro-heading {
-    font-size: 1.5rem;
-  }
-  .intro-paragraph {
-    font-size: 0.9rem;
-  }
+@media screen and (max-width: 840px) {
   .bg {
     width: 60%;
-    right: -10vw;
+    right: -15vw;
+  }
+  .introContent {
+    font-size: 10vw;
+  }
+  .hello {
+    font-size: 4.5vw;
   }
 }
 
-/* Small screens (Mobile) */
-@media screen and (max-width: 768px) {
-  .intro {
-    padding: 0.5rem;
-  }
-  .intro-heading {
-    font-size: 1.2rem;
-  }
-  .intro-paragraph {
-    font-size: 0.8rem;
-  }
+@media screen and (max-width: 480x) {
   .bg {
-    width: 80%;
-    right: -10vw;
-  }
-}
-
-/* Extra small screens (Small Mobile) */
-@media screen and (max-width: 480px) {
-  .intro {
-    padding: 0.25rem;
-  }
-  .intro-heading {
-    font-size: 1rem;
-  }
-  .intro-paragraph {
-    font-size: 0.7rem;
-  }
-  .bg {
-    width: 100%;
-    right: -10vw;
+    right: -20vw;
   }
 }

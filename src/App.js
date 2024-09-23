@@ -1,17 +1,19 @@
 import Navbar from "./components/NavBar/navbar";
 import Intro from "./components/Intro/intro";
-import { OrbitSpace } from "orbit-space";
-
+import Skills from "./components/Skills/skills";
+import Projects from "./components/Projects/projects";
+import Contact from "./components/Contact/contact";
+import Footer from "./components/Footer/footer";
 function App() {
   return (
-    <>
-      <OrbitSpace>
-        <div className="App">
-          <Navbar />
-          <Intro />
-        </div>
-      </OrbitSpace>
-    </>
+    <div className="App">
+      <Navbar />
+      <Intro />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

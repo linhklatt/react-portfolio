@@ -5,11 +5,12 @@
   text-decoration: none;
   background: transparent;
 }
+
 /*background for homepage */
 
 body {
-  /*background: rgb(30, 30, 30);*/
-  color: white;
+  background: black !important;
+  color: white !important;
   overflow: hidden;
   overflow-y: scroll;
 }
