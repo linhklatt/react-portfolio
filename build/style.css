@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+}
+
+/*background for homepage */
+
+body {
+  background: black !important;
+  color: white !important;
+  overflow: hidden;
+  overflow-y: scroll;
+}
