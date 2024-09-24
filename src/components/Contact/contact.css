@@ -1,76 +1,48 @@
 #contactPage {
-  min-height: calc(100vh - 4rem);
-  width: 100vw;
-  max-width: 70rem; /* Increased max-width */
-  margin: 0 auto;
+  padding: 4rem 0;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
 }
 
 .contactTitle {
-  font-size: 3.5rem; /* Same font size for title consistency */
-  font-weight: bold;
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
 }
 
 .contactDesc {
-  padding: 1.5rem;
   font-size: 1.2rem;
-  font-weight: 300;
+  margin-bottom: 2rem;
 }
 
-.contactForm {
-  margin: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 90vw;
-  max-width: 70rem; /* Increased max-width for consistency */
-}
-
-.name,
-.email,
-.msg {
-  font-size: 1.1rem; /* Consistent font size */
-  width: 100%;
-  max-width: 40rem;
-  margin: 0.5rem;
-  padding: 1rem; /* Increased padding */
-  color: white;
-  border: none;
+.form-control {
+  padding: 1rem;
+  font-size: 1.1rem;
   border-radius: 0.5rem;
-  background: rgb(40, 40, 40);
-}
-
-.submitBtn {
-  background: white;
-  color: #000;
+  background-color: #333;
+  color: #fff;
   border: none;
-  padding: 0.75rem 3.5rem;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
   border-radius: 0.5rem;
-  margin: 2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.submitBtn:hover {
-  background-color: #e0e0e0; /* Subtle hover effect */
+.links a {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.3s ease;
 }
 
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.links a:hover {
+  color: #ff4081;
 }
 
-.link {
-  object-fit: cover;
-  height: 2rem;
-  width: 2rem;
-  margin: 0 0.5rem;
+@media (max-width: 768px) {
+  .contactTitle {
+    font-size: 2.5rem;
+  }
+
+  .contactDesc {
+    font-size: 1rem;
+  }
 }

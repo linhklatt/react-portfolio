@@ -1,5 +1,4 @@
 import "./navbar.css";
-
 import { Link } from "react-scroll";
 import { useState } from "react";
 
@@ -14,8 +13,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         {/* Logo */}
-
-        <h1>LK.</h1>
+        <h1 className="logo">LK.</h1>
 
         {/* Hamburger button for mobile view */}
         <button
@@ -38,67 +36,27 @@ const Navbar = () => {
         >
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="intro"
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={500}
-              >
+              <Link className="nav-link" to="intro" smooth duration={500}>
                 About Me
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-200}
-                duration={500}
-              >
+              <Link className="nav-link" to="skills" smooth duration={500}>
                 Skills
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={500}
-              >
+              <Link className="nav-link" to="projects" smooth duration={500}>
                 Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="experience"
-                spy={true}
-                smooth={true}
-                offset={-10}
-                duration={500}
-              >
+              <Link className="nav-link" to="experience" smooth duration={500}>
                 Experience
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="education"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-              >
+              <Link className="nav-link" to="education" smooth duration={500}>
                 Education
               </Link>
             </li>
@@ -108,11 +66,11 @@ const Navbar = () => {
         {/* Contact Button (aligned to the right) */}
         <button
           className="btn btn-primary contact-btn"
-          onClick={() => {
+          onClick={() =>
             document
               .getElementById("contact")
-              .scrollIntoView({ behavior: "smooth" });
-          }}
+              .scrollIntoView({ behavior: "smooth" })
+          }
         >
           Contact Me
         </button>
