@@ -1,73 +1,98 @@
 #intro {
-  height: calc(100vh - 4rem);
+  height: calc(90vh - 4rem);
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #1c1c1c; /* Dark background */
+  color: #f1f1f1; /* Light text color for contrast */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  border-radius: 8px;
 }
 
 .introContent {
-  padding: 2rem;
+  padding: 2.5rem;
+  max-width: 600px;
 }
 
 .hello {
-  font-size: 2rem;
-  font-weight: 100;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff; /* Light color for contrast */
+  margin-bottom: 0.5rem;
 }
 
 .introText {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  color: #e0e0e0; /* Slightly softer light color for large text */
 }
 
 .introName {
-  color: purple;
+  color: #ff4081; /* Accent color for name */
 }
 
 .introPara {
-  font-size: 1.2rem;
-  font-weight: 100;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #ccc; /* Softer light gray for paragraph text */
+  margin-top: 1rem;
 }
 
 .btn {
-  margin: 1rem 0;
-  padding: 0.5rem 1.5rem;
-  border-radius: 2rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  background-color: #ff4081; /* Accent color for button */
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0306e; /* Darker shade on hover */
 }
 
 .profile-img {
-  max-width: 400px; /* Set a larger max width for the image */
-  height: 300px;
+  max-width: 450px;
+  height: auto;
   object-fit: cover;
-  border-radius: 50%; /* Make the profile picture circular */
-  margin-bottom: 20%;
+  border-radius: 50%;
+  margin-bottom: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Shadow for the profile image */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .introContent {
+  #intro {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 100%;
   }
 
-  .bg {
-    display: none;
+  .introContent {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .profile-img {
+    margin-top: 2rem;
+    max-width: 300px;
   }
 
   .hello,
   .introText {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .introPara {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .btn {
     width: 100%;
-  }
-  .profile-img {
-    object-fit: cover;
+    padding: 0.75rem;
   }
 }

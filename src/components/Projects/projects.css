@@ -1,35 +1,46 @@
 #projects {
   margin: 0 auto;
-  min-height: calc(100vh -4rem);
-  width: 100lvw;
-  max-width: 60rem;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 70rem; /* Increased max-width for consistency */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 2rem;
+  padding: 0 3rem; /* Increased padding for consistency */
 }
 
 .projectsTitle {
-  margin: 1rem;
-  font-size: 3rem;
+  margin: 1.5rem;
+  font-size: 3.5rem; /* Same font size as other sections */
+  font-weight: bold;
 }
+
 .projectsDesc {
   font-weight: 300;
-  font-size: 1rem;
-  padding: 1rem;
+  font-size: 1.2rem; /* Consistent description size */
+  padding: 1.5rem;
 }
-.projectsImg {
+
+.projectsImgs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100vw;
   max-width: 65rem;
+  gap: 20px; /* Consistent gap */
 }
+
 .projectImg {
   object-fit: cover;
-  height: 20rem;
-  margin: 0.5rem;
+  height: 22rem; /* Slightly larger images */
+  margin: 1rem;
   border-radius: 0.5rem;
+  transition: transform 0.3s ease; /* Added hover effect */
+}
+
+.projectImg:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }

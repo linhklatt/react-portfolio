@@ -11,9 +11,9 @@ const Intro = () => {
     >
       <div className="row w-100 align-items-center">
         <div className="introContent col-md-6">
-          <h1 className="hello">Hello, </h1>
+          <h1 className="hello">Hello,</h1>
           <h1 className="introText">
-            I'm <span className="introName">Linh Klatt</span> <br />
+            I'm <span className="introName">Linh Klatt</span>
           </h1>
           <p className="introPara">
             Aspiring Full-Stack Developer | Software Engineering Student <br />
