@@ -1,5 +1,4 @@
 import "./navbar.css";
-import logo from "../../assets/images/logo.png";
 
 import { Link } from "react-scroll";
 import { useState } from "react";
@@ -16,7 +15,7 @@ const Navbar = () => {
       <div className="container-fluid">
         {/* Logo */}
 
-        <img src={logo} alt="Logo" className="logo" />
+        <h1>LK.</h1>
 
         {/* Hamburger button for mobile view */}
         <button
@@ -45,20 +44,7 @@ const Navbar = () => {
                 to="intro"
                 spy={true}
                 smooth={true}
-                offset={-100}
-                duration={500}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-50}
+                offset={-10}
                 duration={500}
               >
                 About Me
@@ -68,10 +54,10 @@ const Navbar = () => {
               <Link
                 className="nav-link"
                 activeClass="active"
-                to="projects"
+                to="skills"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-200}
                 duration={500}
               >
                 Skills
@@ -81,13 +67,39 @@ const Navbar = () => {
               <Link
                 className="nav-link"
                 activeClass="active"
-                to="contact"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-10}
+                duration={500}
+              >
+                Projects
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="experience"
+                spy={true}
+                smooth={true}
+                offset={-10}
+                duration={500}
+              >
+                Experience
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link"
+                activeClass="active"
+                to="education"
                 spy={true}
                 smooth={true}
                 offset={-50}
                 duration={500}
               >
-                Portfolio
+                Education
               </Link>
             </li>
           </ul>
