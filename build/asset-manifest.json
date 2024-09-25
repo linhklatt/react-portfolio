@@ -1,18 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.374f57ab.css",
-    "main.js": "/static/js/main.bbdb7f74.js",
-    "static/media/linhImg.png": "/static/media/linhImg.2814301eb965043b4226.png",
-    "static/media/icon2.png": "/static/media/icon2.3e815247a393934262f6.png",
-    "static/media/icon3.png": "/static/media/icon3.23372e275a06c950157c.png",
-    "static/media/icon4.png": "/static/media/icon4.7a188c4016c314c7ca2b.png",
-    "static/media/project-img-1.jpg": "/static/media/project-img-1.e9382f7dc024ed1574d6.jpg",
-    "index.html": "/index.html",
-    "main.374f57ab.css.map": "/static/css/main.374f57ab.css.map",
-    "main.bbdb7f74.js.map": "/static/js/main.bbdb7f74.js.map"
+    "main.css": "/linhklatt/react-portfolio.git/static/css/main.8e28f7ae.css",
+    "main.js": "/linhklatt/react-portfolio.git/static/js/main.463985f8.js",
+    "static/media/linhImg.png": "/linhklatt/react-portfolio.git/static/media/linhImg.2814301eb965043b4226.png",
+    "static/media/react.png": "/linhklatt/react-portfolio.git/static/media/react.cd4ab68456d5875b788e.png",
+    "static/media/c++.png": "/linhklatt/react-portfolio.git/static/media/c++.24a8f93854ab092f17a7.png",
+    "static/media/project-img-1.jpg": "/linhklatt/react-portfolio.git/static/media/project-img-1.e9382f7dc024ed1574d6.jpg",
+    "static/media/css3.png": "/linhklatt/react-portfolio.git/static/media/css3.e54a9e01213df6fcb747.png",
+    "static/media/mongoDB.svg": "/linhklatt/react-portfolio.git/static/media/mongoDB.52300335cb1653f2a8fa072873a6cc17.svg",
+    "static/media/html5.png": "/linhklatt/react-portfolio.git/static/media/html5.33aa72925ab633a221d2.png",
+    "static/media/jquery.svg": "/linhklatt/react-portfolio.git/static/media/jquery.9d9df2d9d22abe5a110bfb2678d77b09.svg",
+    "static/media/mySQL.svg": "/linhklatt/react-portfolio.git/static/media/mySQL.0b9bc0186525f731d3c8f5ade5f64deb.svg",
+    "static/media/bootstrap.svg": "/linhklatt/react-portfolio.git/static/media/bootstrap.26266cccbccea92f9fa2f0c90f165640.svg",
+    "static/media/visual-studio.svg": "/linhklatt/react-portfolio.git/static/media/visual-studio.dd5ad295a13f150dd8e120c49d910823.svg",
+    "static/media/node-js.svg": "/linhklatt/react-portfolio.git/static/media/node-js.3c8b10886bea284f5473b4dd5b43f1d4.svg",
+    "static/media/vs-code.svg": "/linhklatt/react-portfolio.git/static/media/vs-code.6da8f69d89d23ba87d055ac967e98714.svg",
+    "index.html": "/linhklatt/react-portfolio.git/index.html",
+    "static/media/git.svg": "/linhklatt/react-portfolio.git/static/media/git.70f099170f46f760e5d9f09849c589b6.svg",
+    "static/media/JS.svg": "/linhklatt/react-portfolio.git/static/media/JS.87a6904ffa190a37c824d0b73ff669c4.svg",
+    "main.8e28f7ae.css.map": "/linhklatt/react-portfolio.git/static/css/main.8e28f7ae.css.map",
+    "main.463985f8.js.map": "/linhklatt/react-portfolio.git/static/js/main.463985f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.374f57ab.css",
-    "static/js/main.bbdb7f74.js"
+    "static/css/main.8e28f7ae.css",
+    "static/js/main.463985f8.js"
   ]
 }
