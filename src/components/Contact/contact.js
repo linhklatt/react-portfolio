@@ -68,11 +68,7 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <button
-              type="submit"
-              value="send"
-              className="btn btn-primary w-100"
-            >
+            <button type="submit" value="send" className="btn w-25">
               Submit
             </button>
           </form>

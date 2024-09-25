@@ -4,12 +4,13 @@
   box-sizing: border-box;
   text-decoration: none;
   background: transparent;
+  font-family: "Roboto", sans-serif;
 }
 
 /*background for homepage */
 
 body {
-  background: black !important;
+  background: rgb(0, 0, 0) !important;
   color: white !important;
   overflow: hidden;
   overflow-y: scroll;

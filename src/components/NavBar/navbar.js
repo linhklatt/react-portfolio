@@ -66,7 +66,7 @@ const Navbar = () => {
 
         {/* Contact Button (aligned to the right) */}
         <button
-          className="btn btn-primary contact-btn "
+          className="btn contact-btn "
           onClick={() =>
             document
               .getElementById("contactPage")

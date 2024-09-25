@@ -1,6 +1,6 @@
 #skills {
   margin: 0 auto;
-  min-height: calc(100vh - 4rem);
+  min-height: calc(90vh - 4rem);
   width: 100vw;
   max-width: 70rem;
   display: flex;
@@ -9,25 +9,26 @@
   justify-content: center;
   text-align: center;
   padding: 0 3rem;
-  background-color: black;
 }
 
 .skillTitle {
-  margin: 0.5rem;
-  font-size: 3.5rem;
+  color: #9500ff;
+  margin-bottom: 4rem;
+  font-size: 3rem;
   font-weight: 300;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
 }
 
-.skillDesc {
-  font-weight: 300;
-  font-size: 1rem;
-  padding: 1rem;
+.skillTitle:hover {
+  text-shadow: 0 0 10px rgba(149, 0, 255, 0.7), 0 0 20px rgba(149, 0, 255, 0.5),
+    0 0 30px rgba(149, 0, 255, 0.4);
 }
 
 .skillBars {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the entire grid horizontally */
+  gap: 40px; /* Adjusted for better spacing */
   max-width: 70rem;
   width: 100%;
   margin: 0 auto;
@@ -35,45 +36,50 @@
 
 .skillBar {
   display: flex;
-  align-items: center;
-  background-color: rgb(47, 45, 45);
-  padding: 50px;
-  border-radius: 0.5rem;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  height: 100%;
+  flex-direction: row;
+  justify-content: center; /* Center icons within each row */
+  align-items: center; /* Center icons vertically */
+  flex-wrap: wrap;
+  gap: 60px; /* Adjust gap between icons for better spacing */
+  width: 100%; /* Ensure each skillBar takes full width */
 }
 
-.skillBar:hover {
-  transform: translateY(-5px);
+.skillBarLang,
+.skillBarLib,
+.skillBarBD,
+.skillBarTool {
+  display: flex;
+  justify-content: center; /* Center icons in each section */
+  align-items: center; /* Center icons vertically */
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8rem; /* Adjust gap between icon sets */
 }
 
 .skillBarImg {
   width: 60px;
   height: 60px;
-  margin-right: 20px;
-}
-
-.skillBarText {
-  flex-grow: 1;
-}
-
-.skillBarText h2 {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.skillBarText p {
-  margin: 5px 0 0;
-  font-size: 1.1rem;
-  color: #666;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .skillBars {
+    gap: 30px; /* Reduce the gap between items */
+  }
+  .skillBar {
+    gap: 40px; /* Reduce the gap between icons */
+  }
+  .skillBarLang,
+  .skillBarLib,
+  .skillBarBD,
+  .skillBarTool {
+    gap: 6rem; /* Adjust gap for medium screens */
+  }
+}
+
 @media (max-width: 768px) {
   .skillBars {
-    grid-template-columns: 1fr; /* Stack skill bars vertically */
+    flex-direction: column; /* Stack sections vertically */
     gap: 20px;
   }
 
@@ -81,15 +87,40 @@
     font-size: 2.5rem;
   }
 
-  .skillDesc {
-    font-size: 1rem;
+  .skillBar {
+    gap: 20px; /* Narrow gap between icons */
+  }
+
+  .skillBarLang,
+  .skillBarLib,
+  .skillBarBD,
+  .skillBarTool {
+    gap: 4rem; /* Adjust gap for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skillBars {
+    gap: 10px; /* Narrow the gap even more for small screens */
+  }
+
+  .skillTitle {
+    font-size: 2rem;
   }
 
   .skillBar {
-    padding: 15px;
+    gap: 15px; /* Tighter spacing between icons on very small screens */
   }
 
-  .skillBarText h2 {
-    font-size: 1.5rem;
+  .skillBarLang,
+  .skillBarLib,
+  .skillBarBD,
+  .skillBarTool {
+    gap: 2rem; /* Minimize gap for mobile devices */
+  }
+
+  .skillBarImg {
+    width: 40px; /* Shrink icons slightly on smaller screens */
+    height: 40px;
   }
 }
