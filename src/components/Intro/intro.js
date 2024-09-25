@@ -8,9 +8,9 @@ const Intro = () => {
       id="intro"
       className="container-fluid d-flex align-items-center justify-content-between"
     >
-      <div className="row w-100 align-items-center">
+      <div className="row w-100 align-items-center ">
         <div className="introContent col-md-6 animate-fadeIn">
-          <h1 className="hello animate-slideUp">Hello,</h1>
+          <h1 className="hello animate-slideUp ">Hello,</h1>
           <h1 className="introText animate-slideUp">
             I'm <span className="introName">Linh Klatt</span>
           </h1>
@@ -21,14 +21,14 @@ const Intro = () => {
           <a
             href="/Resume.pdf"
             download
-            className="btn btn-primary animate-bounce"
+            className="btn btn-primary animate-slideUp "
           >
-            Download Resume
+            Resume
           </a>
         </div>
 
         {/* Wrapper for the profile image with geometric background */}
-        <div className="col-md-6 d-none d-md-flex justify-content-end">
+        <div className="col-md-6 d-none d-md-flex justify-content-left">
           <div className="profile-img-wrapper">
             <img
               src={bg}

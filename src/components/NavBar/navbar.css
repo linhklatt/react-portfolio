@@ -3,21 +3,12 @@
   color: #fff;
 }
 
-.contact-btn {
-  margin-left: auto;
-}
-
 .navbar {
   padding: 1rem 2rem;
 }
 
 .navbar-nav .nav-item {
   margin: 0 0.5rem;
-}
-
-.nav-link.active {
-  color: #ff4081;
-  border-bottom: 2px solid #ff4081;
 }
 
 @media (max-width: 768px) {
