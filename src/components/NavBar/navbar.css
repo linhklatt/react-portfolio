@@ -1,8 +1,10 @@
 .logo {
   font-size: 2rem;
-  color: #fff;
+  color: #9500ff;
 }
-
+.btn {
+  background-color: #9500ff !important;
+}
 .navbar {
   padding: 1rem 2rem;
 }

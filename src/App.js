@@ -4,6 +4,7 @@ import Skills from "./components/Skills/skills";
 import Projects from "./components/Projects/projects";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
+import { OrbitSpace } from "orbit-space";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <OrbitSpace />
     </div>
   );
 }
