@@ -34,7 +34,7 @@
 }
 
 .links a:hover {
-  color: #ff4081;
+  color: aqua;
 }
 
 @media (max-width: 768px) {

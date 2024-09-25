@@ -1,21 +1,8 @@
-#intro {
-  height: calc(90vh - 4rem);
-  margin: 0 auto;
-  padding: 4rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #1c1c1c;
-  color: #f1f1f1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-}
-
 .hello,
 .introText,
 .introPara,
 .profile-img {
-  opacity: 1;
+  opacity: 0;
   transform: translateY(30px);
 }
 
@@ -27,7 +14,6 @@
 .profile-img-wrapper {
   position: relative;
   display: inline-block;
-  background-color: #1c1c1c;
   padding: 3rem;
   border-radius: 80%; /* Use rounded corners for a geometric shape */
   clip-path: ellipse(50px 60px at 0 10% 20%); /* Geometric shape */
@@ -39,8 +25,13 @@
   object-fit: cover;
   border-radius: 100%; /* Circular image */
   border: 8px solid aqua; /* Optional border */
+  border: 8px solid aqua;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
+.profile-img:hover {
+  box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glowing effect */
+}
 .animate-fadeIn {
   animation: fadeIn 1.5s forwards;
 }
@@ -104,7 +95,7 @@
   }
 
   .profile-img-wrapper {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
   .hello,

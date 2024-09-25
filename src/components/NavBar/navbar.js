@@ -18,6 +18,7 @@ const Navbar = () => {
         {/* Hamburger button for mobile view */}
         <button
           className="navbar-toggler"
+          s
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -65,10 +66,10 @@ const Navbar = () => {
 
         {/* Contact Button (aligned to the right) */}
         <button
-          className="btn btn-primary contact-btn"
+          className="btn btn-primary contact-btn "
           onClick={() =>
             document
-              .getElementById("contact")
+              .getElementById("contactPage")
               .scrollIntoView({ behavior: "smooth" })
           }
         >
