@@ -14,7 +14,7 @@
 
 .skillTitle {
   margin: 1.5rem;
-  font-size: 3.5rem; /* Same font size as other sections */
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -27,7 +27,7 @@
 .skillBars {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px; /* Consistent gap */
+  gap: 30px;
   max-width: 70rem;
   width: 100%;
   margin: 0 auto;
@@ -67,4 +67,28 @@
   margin: 5px 0 0;
   font-size: 1.1rem;
   color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skillBars {
+    grid-template-columns: 1fr; /* Stack skill bars vertically */
+    gap: 20px;
+  }
+
+  .skillTitle {
+    font-size: 2.5rem;
+  }
+
+  .skillDesc {
+    font-size: 1rem;
+  }
+
+  .skillBar {
+    padding: 15px;
+  }
+
+  .skillBarText h2 {
+    font-size: 1.5rem;
+  }
 }

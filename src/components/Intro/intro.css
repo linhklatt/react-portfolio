@@ -5,66 +5,97 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1c1c1c; /* Dark background */
-  color: #f1f1f1; /* Light text color for contrast */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
 }
 
-.introContent {
-  padding: 2.5rem;
-  max-width: 600px;
-}
-
-.hello {
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: #fff; /* Light color for contrast */
-  margin-bottom: 0.5rem;
-}
-
-.introText {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #e0e0e0; /* Slightly softer light color for large text */
+.hello,
+.introText,
+.introPara,
+.profile-img {
+  opacity: 1;
+  transform: translateY(30px);
 }
 
 .introName {
-  color: #ff4081; /* Accent color for name */
+  color: aqua;
 }
 
-.introPara {
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 1.6;
-  color: #ccc; /* Softer light gray for paragraph text */
-  margin-top: 1rem;
-}
-
-.btn {
-  margin-top: 1.5rem;
-  padding: 0.75rem 2rem;
-  border-radius: 30px;
-  background-color: #ff4081; /* Accent color for button */
-  color: #fff;
-  border: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #e0306e; /* Darker shade on hover */
+/* Wrapper for the geometric background */
+.profile-img-wrapper {
+  position: relative;
+  display: inline-block;
+  background-color: #1c1c1c;
+  padding: 3rem;
+  border-radius: 80%; /* Use rounded corners for a geometric shape */
+  clip-path: ellipse(50px 60px at 0 10% 20%); /* Geometric shape */
 }
 
 .profile-img {
-  max-width: 450px;
+  max-width: 300px;
   height: auto;
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Shadow for the profile image */
+  border-radius: 100%; /* Circular image */
+  border: 8px solid aqua; /* Optional border */
 }
 
-/* Responsive Adjustments */
+.animate-fadeIn {
+  animation: fadeIn 1.5s forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 1.5s forwards;
+}
+
+.animate-bounce {
+  animation: bounce 1.5s infinite;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 768px) {
   #intro {
     flex-direction: column;
@@ -72,14 +103,8 @@
     text-align: center;
   }
 
-  .introContent {
-    padding: 1.5rem;
-    max-width: 100%;
-  }
-
-  .profile-img {
+  .profile-img-wrapper {
     margin-top: 2rem;
-    max-width: 300px;
   }
 
   .hello,
