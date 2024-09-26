@@ -1,0 +1,3 @@
+[submodule "react-portfolio"]
+	path = react-portfolio
+	url = git@github.com:linhklatt/react-portfolio.git
